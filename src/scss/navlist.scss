@@ -1,0 +1,28 @@
+@import './common.scss';
+.navlist{
+//  background: #000;
+    color: #fff;
+    ul{
+        display: flex;
+        overflow: auto;
+        width:rem(365);
+        padding-left: rem(15);
+        li{
+            flex: 1;
+            .active{
+                width: 12px;
+                margin-left: rem(7);
+                margin-top: rem(5);
+                border-bottom: 2px solid #fff;
+            }
+        }
+    }
+    .change{
+        li{
+            color: #000;
+            div{
+                border-bottom: 2px solid #000;
+            }
+        }
+    }
+}

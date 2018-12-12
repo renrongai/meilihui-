@@ -1,0 +1,190 @@
+@import './common.scss';
+
+.find{
+    .whitespace{
+        height: rem(23);
+    }
+   .select{
+    z-index: 222;
+    a{
+        display: inline-block;
+        width: rem(320);
+        margin:0 rem(25);
+        height: rem(50);
+        line-height: rem(50);
+        text-align: center;
+        margin-top: rem(7); 
+        margin-bottom: rem(20);       
+        color: #9b9b9b;
+        background-color: #f0f0f0;
+        border:none;
+        span{
+           color: #9b9b9b;
+           font-size: rem(16);
+           display: inline-block;
+           margin-right: rem(10);
+        }
+    }
+}
+    ul{
+        font-size: rem(16);
+        height: rem(520);
+        width: rem(113);
+        background-color: #f0f0f0;
+        li{
+            height: rem(50);
+            line-height: rem(50);
+            
+            padding-left: rem(15);
+               
+        }
+        .active{
+                border-bottom: 1px solid #dd2828;
+                font-weight: bold;
+        }
+    }
+}
+
+.cart{
+    background: #fff;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .c_header{
+        padding-left: rem(15);
+        margin-bottom: rem(10);
+        i{
+           float: left;
+           font-size: rem(18);
+           color: #666;
+        }
+        height: rem(50);
+        border-bottom: 1px solid #ccc;
+        font-size: rem(20);
+        text-align: center;
+        line-height: rem(50);
+    }
+    .main{
+        flex: 1;
+       display: flex;
+       flex-direction: column;    
+       align-items: center;  
+        p{
+            color:#6B6C6C;
+            font-size: rem(18);
+            height: rem(30);
+            line-height: rem(30);
+        }
+        .tanhao{
+            margin: rem(50) 0;
+            width: rem(100);
+            height: rem(100);
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            line-height: rem(100);
+            color: #666;
+            font-size: rem(30);
+        }
+        .tap{
+            margin-top: rem(20);
+            span{
+                display: inline-block;
+                width:rem(150);
+                height: rem(50);
+                background: #c60016;
+                color: #fff;
+                line-height: rem(50);
+                &:first-child{
+                    background: #F4F4F4;
+                    color: #333;
+                }
+            }
+        }   
+    }
+    .foot{
+        height: rem(70);
+        div{
+            float: left;
+            i{
+               display: inline-block;
+                margin-left: rem(10);
+                margin-top: rem(30);
+                margin-right: rem(15);
+                width: rem(16);
+                height: rem(16);
+                background-image: url("./img/fxz.png");
+                border: 1px solid #bfbfbf;
+                border-radius:rem(10);
+                vertical-align: bottom;
+            }
+        }
+        span{
+            float: right;
+            margin-top: rem(15);
+            width:rem(120);
+            height: rem(40);
+            line-height: rem(40);
+            background: #c60016;
+            border-radius: 5px;
+            margin-right: rem(5);
+            color: #fff;
+        }
+    }
+}
+
+// 我的页面
+.mine{
+    color: #9d9d9d ;
+    div{
+        &:first-child{
+            height: rem(189);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #eaeaea;
+            span{
+                display: block;
+                text-align: center;
+                color: #fff;
+                &:first-child{
+                    width: rem(80);
+                    height: rem(80);
+                    border: 1px solid #ccc;
+                    border-radius: 50%;
+                    line-height: rem(90);
+                    font-size: rem(50);
+                    
+                    background: #eaeaea;
+                    margin-bottom: rem(10);
+                }
+                &:last-child{
+                    width:rem(110);
+                    height: rem(35);
+                    background: #ed263c;
+                    border-radius: rem(5);
+                    line-height: rem(35);
+                    
+                }
+            }
+        }
+        &:nth-child(2){
+            height: rem(30);
+            padding: rem(10) rem(20);
+            p{
+                text-align: right;
+            }
+        }
+        &:nth-child(3){
+            height: rem(53);
+            padding: rem(8) rem(8) rem(11) 0;
+            ul{
+                display: flex;
+                li{
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
